@@ -1,0 +1,470 @@
+* {
+    padding: 0;
+    margin: 0;
+    background-color: rgb(255, 89, 133);
+}
+
+.body {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'menu poster poster poster poster poster'
+        'menu main main main right right'
+        'footer footer footer footer footer footer';
+    gap: 0;
+}
+
+.body-menu {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'flexbox flexbox flexbox flexbox flexbox flexbox'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+    gap: 1vw;
+}
+
+.body-contact {
+    display: grid;
+    grid-template-areas:
+        'header header header header header header'
+        'main main main main main main'
+        'footer footer footer footer footer footer';
+    gap: 1vw;
+}
+
+.header {
+    grid-area: header;
+    color: royalblue;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px purple;
+    font-family: Tahoma, san-serif;
+    position: fixed;
+    width: 100vw;
+    left: 50%;
+    transform: translate(-50%, -0%);
+}
+
+h1,
+h2,
+h3,
+h4 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 3.8vw;
+}
+
+h2 {
+    font-size: 2vw;
+}
+
+h3 {
+    font-size: 1.7vw;
+}
+
+h4 {
+    font-size: 1.4vw;
+}
+
+.menu {
+    grid-area: menu;
+    color: rgb(255, 72, 78);
+    text-shadow: none;
+    margin-top: 6vw;
+    position: fixed;
+    font-size: 1.8vw;
+    font-family: Verdana, san-serif;
+    text-transform: uppercase;
+}
+
+.menu a {
+    display: table;
+}
+
+.menu a:link,.menu a:local-link {
+    color: royalblue;
+}
+
+.menu a:visited {
+    color: rgb(183, 31, 253);
+}
+
+.menu a:hover {
+    background-color: aqua;
+}
+
+.poster {
+    grid-area: poster;
+    padding-top: 6vw;
+}
+
+.main {
+    grid-area: main;
+    font-family: sans-serif;
+    padding-top: 6.5vw;
+    padding-left: 7.5vw;
+}
+
+section {
+    text-align: justify;
+    color: royalblue;
+    font-family: Verdana, san-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+article {
+    text-align: justify;
+    color: royalblue;
+    width: 95%;
+    padding-bottom: 3vw;
+    margin: 0 auto;
+    font-size: 1.4vw;
+    font-family: Verdana, san-serif;
+}
+
+aside {
+    width: 30%;
+    padding-left: 1rem;
+    margin-left: 1rem;
+    font-size: 1vw;
+    font-style: italic;
+    float: right;
+    box-shadow: inset 5px 0 5px -5px royalblue;
+}
+
+.right {
+    grid-area: right;
+    font-family: Verdana, sans-serif;
+    padding-top: 6.5vw;
+    padding-right: 7.5vw;
+}
+
+#drink-menu {
+    grid-area: main;
+    text-align: center;
+}
+
+.menu-list {
+    text-align: justify;
+    color: royalblue;
+    font-family: Verdana, san-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact {
+    padding-top: 5vw;
+    grid-area: main;
+    text-align: center;
+}
+
+#contact {
+    text-align: center;
+}
+
+#img-bar {
+    width: 100%;
+    height: auto;
+    margin-top: -1.4vw;
+}
+
+#img-neon {
+    width: 30%;
+    height: auto;
+    float: left;
+}
+
+#img-neon:hover {
+    background-color: aqua;
+}
+
+#img-martini {
+    width: 50%;
+    height: auto;
+    margin-left: 1vw;
+    float: right;
+}
+
+#img-mojito {
+    width: 35%;
+    height: auto;
+    margin-left: 1vw;
+    float: right;
+}
+
+ul {
+    list-style-type: none;
+    text-align: center;
+}
+
+.flexbox {
+    grid-area: flexbox;
+    height: auto;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4vw;
+    flex-direction: column;
+}
+
+.flexbox div {
+    font-size: 1.8vw;
+    font-family: Verdana, san-serif;
+}
+
+.flexbox div a {
+    text-decoration: none;
+}
+
+.flexbox div a:link {
+    color: royalblue;
+}
+
+.flexbox div a:visited {
+    color: rgb(183, 31, 253);
+}
+
+.flexbox div a:local-link {
+    color: royalblue;
+}
+
+.flexbox div a:hover {
+    background-color: aqua;
+}
+
+.footer {
+    grid-area: footer;
+    text-align: center;
+    font-size: 0.85vw;
+    color: royalblue;
+}
+
+*::selection {
+    background-color: aqua;
+}
+
+@media only screen and (orientation: portrait) {
+
+    .body {
+        display: block;
+        gap: 0;
+    }
+
+    .body-menu {
+        display: block;
+        gap: 0;
+    }
+
+    .body-contact {
+        display: block;
+        gap: 0;
+    }
+
+    h1 {
+        font-size: 7.6vw;
+    }
+
+    h2 {
+        font-size: 4vw;
+    }
+
+    h3 {
+        font-size: 3.4vw;
+    }
+
+    h4 {
+        font-size: 2.8vw;
+    }
+
+    .menu {
+        margin-top: 8.5vw;
+        font-size: 3.8vw;
+        text-align: center;
+        width: 100vw;
+        left: 50%;
+        transform: translate(-50%, -0%);
+    }
+
+    .menu a {
+        display: inline;
+    }
+
+    #img-bar {
+        margin-top: 7.2vw;
+    }
+
+    .main {
+        padding-left: 0vw;
+    }
+
+    article {
+        font-size: 2.8vw;
+    }
+
+    aside {
+        font-size: 2vw;
+    }
+
+    .right {
+        padding-right: 0vw;
+    }
+
+    .footer {
+        font-size: 2.5vw;
+    }
+
+    #drink-menu {
+        padding-top: 10vw;
+    }
+
+    .contact {
+        padding-top: 17vw;
+    }
+
+    .flexbox {
+        position: fixed;
+        margin-top: 14vw;
+        left: 50%;
+        transform: translate(-50%, -0%);
+        flex-direction: row;
+    }
+
+    .flexbox div {
+        font-size: 3.6vw;
+        padding: 1vw;
+    }
+
+    .menu-list {
+        display: block;
+        flex-direction: row;
+        margin-top: 15vw;
+    }
+}
+
+@media only screen and (min-width : 576px) and (max-width : 1200px) and (orientation : landscape) {
+    h1 {
+        font-size: 5.7vw;
+    }
+
+    h2 {
+        font-size: 3vw;
+    }
+
+    h3 {
+        font-size: 2.55w;
+    }
+
+    h4 {
+        font-size: 2.1vw;
+    }
+
+    .menu {
+        font-size: 2.85vw;
+    }
+
+    #img-bar {
+        margin-top: 1vw;
+    }
+
+    article {
+        font-size: 2.4vw;
+    }
+
+    .main {
+        padding-left: 12.3vw;
+    }
+
+    .right {
+        padding-right: 12.3vw;
+    }
+
+    .footer {
+        font-size: 2.5vw;
+    }
+
+    .flexbox {
+        margin-top: 6vw;
+    }
+
+    .flexbox div {
+        font-size: 2.7vw;
+    }
+
+    .contact {
+        padding-top: 9vw;
+    }
+}
+
+@media only screen and (max-width : 575.98px) and (orientation : landscape) {
+    .body {
+        display: grid;
+        grid-template-areas:
+            'header header header header header header'
+            'menu poster poster poster poster poster'
+            'menu main main main main main'
+            'right right right right right right'
+            'footer footer footer footer footer footer';
+        gap: 0;
+    }
+
+    h1 {
+        font-size: 7.41vw;
+    }
+
+    h2 {
+        font-size: 3.9vw;
+    }
+
+    h3 {
+        font-size: 3.32w;
+    }
+
+    h4 {
+        font-size: 2.73vw;
+    }
+
+    .menu {
+        font-size: 3.5vw;
+        margin-top: 8.4vw;
+    }
+
+    #img-bar {
+        margin-top: 3.2vw;
+    }
+
+    article {
+        font-size: 3.12vw;
+    }
+
+    .main {
+        padding-left: 15.2vw;
+    }
+
+    .right {
+        padding-left: 15.2vw;
+        padding-right: 0vw;
+    }
+
+    .footer {
+        font-size: 3.25vw;
+    }
+
+    .flexbox {
+        padding-top: 3vw;
+    }
+
+    .flexbox div {
+        font-size: 3.51vw;
+    }
+
+    .contact {
+        padding-top: 9vw;
+    }
+}
